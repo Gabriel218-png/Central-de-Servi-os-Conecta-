@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Serviços</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <h1>Conecta+</h1>
+
+    <button onclick="mostrar('catalogo')">Início</button>
+    <button onclick="mostrar('solicitacao')">Nova Solicitação</button>
+    <button onclick="mostrar('painel')">Painel</button>
+
+    <section id="catalogo">
+        <h2>Como podemos ajudar?</h2>
+        <input type="text" placeholder="Buscar serviço">
+        <select>
+            <option>Todas as categorias</option>
+            <option>TI</option>
+            <option>RH</option>
+            <option>Manutenção</option>
+        </select>
+        <p>Escolha um serviço.</p>
+    </section>
+
+    <section id="solicitacao" hidden>
+        <h2>Nova Solicitação</h2>
+        <form>
+            <p>Serviço:</p>
+            <input type="text" placeholder="Nome do serviço" required>
+            <p>Descrição:</p>
+            <textarea minlength="15" required></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="painel" hidden>
+        <h2>Painel de Acompanhamento</h2>
+        <select>
+            <option>Todos</option>
+            <option>Aberto</option>
+            <option>Em andamento</option>
+            <option>Resolvido</option>
+        </select>
+        <p>Nenhuma solicitação cadastrada.</p>
+    </section>
+    
+</body>
+
+</html>
